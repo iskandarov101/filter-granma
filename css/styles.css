@@ -15,3 +15,361 @@ html {
 body {
   font-family: 'Kaushan Script', cursive;
 }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo__img {
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__link {
+  text-decoration: none !important;
+  font-size: 24px;
+  color: #ef7998;
+  margin-right: 15px;
+  transition: color .6s ease;
+}
+
+.nav__link:hover {
+  color: #000;
+  transition: color .5s ease;
+}
+
+.site-header-right-side {
+  display: flex;
+  align-items: center;
+}
+
+.card-info {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 18px;
+}
+
+.site-header-right-side__card-info-text {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.site-header-right-side__card-info-text::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('../img/shopping-cart.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.phone-number {
+  text-decoration: none !important;
+  font-size: 20px;
+  color: #000;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number:hover {
+  color: #000 !important;
+  opacity: .8;
+}
+
+.phone-number:active {
+  opacity: .5;
+}
+
+.phone-number::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/phone.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.nav-open-btn {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+
+/* ========   Hero section   ======== */
+
+.hero {
+  position: relative;
+  height: calc(100vh - 90px);
+  background-image: url('../img/headerBcg.jpeg');
+  background-position: top 60% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 42px;
+}
+
+.hero-title--span {
+  color: #ef7998;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.u-btn {
+  text-decoration: none !important;
+  color: #000;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 7px 20px;
+  transition: background-color .6s ease;
+}
+
+.u-btn:hover {
+  color: #ef7998 !important;
+  background-color: #000;
+  transition: background-color .6s ease;
+}
+
+.u-btn:active {
+  opacity: .5;
+}
+
+.hero-btn {
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 25px;
+  border: 3px solid #000;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* =======   About section   ======= */
+
+.about {
+  display: flex;
+  padding: 80px;
+  justify-content: center;
+}
+
+.about-left {
+  margin-top: 5%;
+  margin-right: 70px;
+}
+
+.about-right {
+  margin-left: 70px;
+}
+.about-left--title {
+  font-size: 36px;
+}
+
+.about-left--text {
+  max-width: 350px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  opacity: .6;
+}
+
+.about-left--title-span {
+  font-size: 48px;
+  color: #ef7998;
+  font-weight: bolder;
+}
+
+.about-right-img {
+  box-shadow: 0 0 0 7px rgba(235, 206, 46, .5);
+  transition: box-shadow .5s ease;
+}
+
+.about-right-img:hover {
+  box-shadow: -30px -30px 0 7px rgba(235, 206, 46, .5);
+  transition: box-shadow .5s ease;
+}
+
+
+/* =========   Our Story   ========== */
+
+.our-story {
+  background-color: rgba(85, 79, 79, 0.2);
+  padding: 60px 30px;
+}
+
+.our-story--title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.our-story--title-span {
+  font-size: 48px;
+  color: #ef7998;
+  font-weight: bolder;
+}
+
+.sort-buttons {
+  width: 100%;
+  max-width: 100%;
+  margin: 15px auto;
+}
+
+.btn-outline-secondary {
+  border: none;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  padding: 8px 8px 8px 16px;
+  outline: none !important;
+}
+
+.btn-outline-secondary {
+  border: none;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  padding: 8px 8px 8px 16px;
+  outline: none !important;
+}
+.btn-outline-secondary:hover {
+  outline: none !important;
+}
+.btn-outline-secondary:active {
+  background-color: #fff !important;
+}
+.serch-input {
+  max-width: 50% !important;
+  outline: none;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding-left: 8px;
+}
+.sort-btn {
+  margin-right: 15px;
+}
+.sort-btn:last-child {
+  margin-right: 0;
+}
+.cakes-output {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.output-item {
+  max-width: 320px;
+  margin: 35px 15px 0 0;
+}
+.cake-title {
+  font-size: 20px;
+}
+.cake-cost {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about-left {
+    margin-top: 5%;
+    margin-right: 30px;
+  }
+  .about-right {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .about {
+    padding: 70px 30px;
+  }
+  .about-left {
+    margin-top: 5%;
+    margin-right: 10px;
+  }
+  .about-right {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .logo {
+    padding: 20px;
+  }
+  .nav__list {
+    display: block;
+    height: 0;
+    opacity: 1;
+    transition: height .5s ease;
+  }
+  .nav__link {
+    margin-left: 20px;
+  }
+  .site-header-right-side {
+    display: none;
+  }
+  .nav--open .nav__list{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 108px;
+    opacity: 1;
+    transition: height .5s ease;
+  }
+  .nav {
+    width: 100%;
+    max-width: 100%;
+    order: 3;
+  }
+  .nav-open-btn {
+    display: block;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+  .about-right {
+    order: -1;
+    max-width: 100%;
+    height: auto;
+  }
+  .about-right-img  {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-left {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  .about-right {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
