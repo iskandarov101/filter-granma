@@ -255,40 +255,50 @@ body {
   padding: 8px 8px 8px 16px;
   outline: none !important;
 }
+
 .btn-outline-secondary:hover {
   outline: none !important;
 }
+
 .btn-outline-secondary:active {
   background-color: #fff !important;
 }
-.serch-input {
-  max-width: 50% !important;
+
+.search-input {
+  /* max-width: 40%; */
   outline: none;
   border: none;
   border-radius: 0 6px 6px 0;
   padding-left: 8px;
 }
+
 .sort-btn {
   margin-right: 15px;
 }
+
 .sort-btn:last-child {
   margin-right: 0;
 }
+
 .cakes-output {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .output-item {
   max-width: 320px;
   margin: 35px 15px 0 0;
 }
+
 .cake-title {
   font-size: 20px;
 }
+
 .cake-cost {
   font-size: 22px;
 }
+
 
 @media only screen and (max-width: 1100px) {
   .about-left {
